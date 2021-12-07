@@ -1,9 +1,9 @@
-const express = require('express');
-const morgan = require('morgan');
-const cookieParser = require('cookie-parser');
-const setHeaders = require('./middlewares/setHeaders');
+import express from 'express';
+import morgan from 'morgan';
+import cookieParser from 'cookie-parser';
+import setHeaders from './middlewares/setHeaders';
 
-const routes = require('./routes/index');
+import routes from './routes/index';
 
 const app = express();
 
@@ -15,4 +15,4 @@ app.use(setHeaders);
 
 app.use('/', routes);
 
-module.exports = app;
+export default app;

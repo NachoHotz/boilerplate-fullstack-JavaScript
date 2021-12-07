@@ -1,6 +1,8 @@
-const app = require('./src/app');
-const config = require('./src/lib/config');
+import app from './src/app';
+import config from './src/lib/config';
 
-app.listen(config.API_PORT, () =>
-  console.log(`server running on port ${config.API_PORT}`),
+const { API_PORT } = config;
+
+app.listen(API_PORT, () =>
+  console.log(`server running on port ${API_PORT}`),
 );

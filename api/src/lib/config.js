@@ -1,4 +1,5 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 const config = {
   DB_USER: process.env.DB_USER,
@@ -9,4 +10,4 @@ const config = {
   API_PORT: process.env.API_PORT,
 }
 
-module.exports = config;
+export default config;

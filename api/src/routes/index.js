@@ -1,7 +1,9 @@
-const router = require('express').Router();
+import { Router } from 'express';
 
-const { basicController } = require('../controllers/basicController');
+import basicController from '../controllers/basicController';
+
+const router = Router();
 
 router.get('/', basicController);
 
-module.exports = router;
+export default router;
