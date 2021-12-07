@@ -1,4 +1,4 @@
-import basicService from '../services/basicService';
+import basicService from '../services/basicService.service';
 
 const basicController = (req, res) => {
   const response = basicService();

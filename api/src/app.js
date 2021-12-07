@@ -3,7 +3,7 @@ import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import setHeaders from './middlewares/setHeaders';
 
-import routes from './routes/index';
+import routes from './routes/index.route';
 
 const app = express();
 
